@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;overflow:hidden;background:#34bcee}
+  body{
+    position:relative;color:#090939;
+    font-family:"Helvetica Neue","HelveticaNeue",Helvetica,"Nimbus Sans",Arial,sans-serif;
+    background:
+      radial-gradient(circle at 86% 2%,rgba(255,255,255,.55),transparent 36%),
+      linear-gradient(155deg,#34bcee 0%,#00b0ed 100%);
+  }
+  .flower{
+    position:absolute;right:-150px;top:-190px;width:700px;height:700px;border-radius:50%;
+    background:
+      radial-gradient(ellipse 24% 48% at 50% 16%,rgba(231,21,129,.62),transparent 72%),
+      radial-gradient(ellipse 24% 48% at 50% 84%,rgba(159,3,75,.52),transparent 72%),
+      radial-gradient(ellipse 48% 24% at 16% 50%,rgba(249,231,21,.72),transparent 72%),
+      radial-gradient(ellipse 48% 24% at 84% 50%,rgba(255,255,255,.85),transparent 72%),
+      radial-gradient(circle at 50% 50%,rgba(0,122,221,.55),transparent 52%);
+    filter:blur(4px);
+  }
+  .stripe{position:absolute;inset:0 0 auto 0;height:10px;background:#f9e715}
+  .grid{position:absolute;inset:0;display:grid;grid-template-columns:1fr 370px;gap:58px;padding:58px 64px 54px;z-index:1}
+  .copy{display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}
+  .kicker{
+    display:inline-flex;align-self:flex-start;align-items:center;
+    font-size:15px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+    color:#9f034b;background:#fff;border:2px solid #090939;
+    padding:9px 14px;margin-bottom:24px;
+  }
+  h1{font-weight:700;font-size:66px;line-height:.9;letter-spacing:-3.6px;max-width:700px}
+  .sub{font-size:25px;line-height:1.25;color:#1b1b63;margin-top:22px;max-width:620px}
+  .foot{margin-top:30px;display:flex;align-items:center;gap:13px;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#090939}
+  .dot{width:10px;height:10px;background:#9f034b}
+  .poster{position:relative;z-index:1;display:flex;align-items:center;justify-content:center}
+  .poster img{
+    width:342px;height:auto;
+    background:#fff;padding:10px;
+    box-shadow:0 28px 70px rgba(9,9,57,.34);
+  }
+</style>
+</head>
+<body>
+  <div class="stripe"></div>
+  <div class="flower"></div>
+  <div class="grid">
+    <div class="copy">
+      <p class="kicker">20N · Día Internacional de la Memoria Trans</p>
+      <h1>Orgullosas de ti, orgullosas de Burlada.</h1>
+      <p class="sub">Memoria, contexto y compromisos contra la transfobia.</p>
+      <p class="foot"><span class="dot"></span> Burlada / Burlatako Udala · 20 de noviembre</p>
+    </div>
+    <div class="poster">
+      <img src="cartel-20n-900.jpg" alt="">
+    </div>
+  </div>
+</body>
+</html>
